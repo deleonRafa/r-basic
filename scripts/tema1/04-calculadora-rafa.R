@@ -116,6 +116,58 @@ floor(-3.45)
 ceiling(-3.45)
 trunc(-3.45)
 
-
+#asignaciones de valores a variables
 x=(pi^2)/2
 x
+
+y <- cos(pi/4)
+y
+
+sin(pi/4) + cos(pi/4) -> z
+z
+
+edad = 30
+nombre = "Rafa De Leon"
+Hola = 1
+hola = 5
+
+x=2
+x = x^2
+x = sqrt(x)
+
+#funciones
+#f(x) = x^3 - (3^x) * sin(x)
+f = function(x) { 
+  x^3 - (3^x) * sin(x)
+  }
+f(4) # = 4^3 - (3^4) * sin(4)
+
+suma1 <- function(t) {
+  t + 1
+}
+suma1(5)
+
+product <- function(x,y){
+  x*y
+}
+
+product(5,7)
+
+suma5 <- function(numero){
+  numero = suma1(numero);
+  numero = suma1(numero);
+  numero = suma1(numero);
+  numero = suma1(numero);
+  suma1(numero)
+} #las expresiones se separan por ;
+
+suma5(3)
+
+ls() # listar las variables y funciones
+rm(product) # remove variables o funciones 
+ls()
+rm(list = ls()) #remove de todos los elementos o simplemente se le da a el ícono de escoba en el panel de environmente
+ls()
+
+
+
