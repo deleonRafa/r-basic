@@ -105,7 +105,7 @@ round(1.45,1)
 round(1.55,1)
 
 round(sqrt(2),0)
-round(sqrt(2))
+round(sqrt(2)) # ambas fuciones arrojan el mismo resultado ya que al no tener el segundo parametro, considera que se redondee a 0 digits
 
 round(digits = 5, sqrt(2)) #se invierten los parámetros pero mencionandolo
 round(sqrt(2), 5)
@@ -130,17 +130,20 @@ edad = 30
 nombre = "Rafa De Leon"
 Hola = 1
 hola = 5
+5Hola = 4 #variables no pueden empezar por numero
 
 x=2
 x = x^2
 x = sqrt(x)
 
 #funciones
-#f(x) = x^3 - (3^x) * sin(x)
+#f(x - variables de entrada) = x^3 - (3^x) * sin(x)
 f = function(x) { 
   x^3 - (3^x) * sin(x)
   }
 f(4) # = 4^3 - (3^4) * sin(4)
+f(5)
+f(pi/2)
 
 suma1 <- function(t) {
   t + 1
@@ -169,5 +172,13 @@ ls()
 rm(list = ls()) #remove de todos los elementos o simplemente se le da a el ícono de escoba en el panel de environmente
 ls()
 
+#Números Complejos
 
+#Ejemplo:
+z = 2+3i
+z2 = complex(real =  2, imaginary = -3) #Ambos z = z2 son iguales expresado distinto
+Re(z) #parte real del número imaginario
+Im(z)
+Conj(z2) # cambia de signo y se genera el valor conjugado del número complejo
 
+3+2
